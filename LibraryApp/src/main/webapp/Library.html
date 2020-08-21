@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Library</title>
+    <!--This is the CSS codes -->
+<style>
+ body,html{
+    background-image:url('images/bg2.jpg');
+
+    background-size:contain;
+
+    background-repeat: no-repeat;
+
+    background-position: justify;
+
+    height:100%;
+
+    width:100%;
+
+    margin:0%;
+    }
+
+     h1   {
+     color: white;
+     }
+      h3  {
+     color: yellow;
+     }
+
+     p    {
+     color: black;
+     }
+     .navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+<!--Navbar links on mouse-over-->
+.navbar a:hover {
+  background-color: #000;
+}
+
+            <!-- Current/active navbar link -->
+.active {
+  background-color: #4CAF50;
+}
+
+<!-- Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels -->
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+ </style>
+    <!--This is the Javascript codes -->
+<script>
+        document.getElementById("serviceTable").InnerHTML.style.fontSize = "50px";
+        document.getElementById("serviceTable").style.fontcolor = "red";
+
+</script>
+</head>
+<body>
+<div class="navbar">
+    <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+    <a href="#"><i class="fa fa-fw fa-search"></i> Search For Book</a>
+    <a href="#"><i class="fa fa-fw  fa-envelope"></i> Contact Us</a>
+    <a href="#"><i class="fa fa-fw fa-user"></i> Leave a message</a>
+</div>
+<h1>Hello There!! Welcome to the Library</h1>
+<h3 >This is the best library in the whole world. </h3>
+<p>It replaces the likes of havard and MIT.</p>
+<p>The library includes a couple of services to include: </p>
+<h3>Services...</h3>
+<table style="width=100%", id="serviceTable">
+    <tr>
+        <th>Service</th>
+        <th>Employee</th>
+    </tr>
+    <tr>
+        <td>Manage borrowed books</td>
+        <td>Jackie O.</td>
+
+    <tr>
+        <td>Manage returned books</td>
+        <td>Drake O.</td>
+    </tr>
+    <tr>
+        <td>Manage new users</td>
+        <td>Becky O.</td>
+    </tr>
+</table>
+
+<p>Please register here with us so we can contact you: </p>
+<form action="/action_page.php">
+    <label for="fname">Please Enter Your First name:</label><br>
+    <input type="text" id="fname" name="fname" value=" "><br>
+    <label for="lname">Please Enter Your Last name:</label><br>
+    <input type="text" id="lname" name="lname" value=" "><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
